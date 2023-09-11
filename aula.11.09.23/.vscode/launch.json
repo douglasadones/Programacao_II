@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "teste",
+            "name": "aula.11.09.23",
             "request": "launch",
             "type": "dart"
         }
