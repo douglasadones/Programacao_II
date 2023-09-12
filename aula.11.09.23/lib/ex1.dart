@@ -11,7 +11,7 @@ void main() {
     if (nums.containsKey(number)) {
       nums[number]++;
     } else {
-      nums[number] = 1;
+      nums[number] = 1; // ou nums[number] == null -- isso quer dizer que não ha a chave que procuramos
     }
     loop--;
   } while (loop > 0);
@@ -19,7 +19,7 @@ void main() {
   var allKeys = nums.keys.toList();
   allKeys.sort(); // keys ordenadas
 
-  for (var i = 0; i < allKeys.length; i++) {
-    stdout.write('${allKeys[i]} aparece ${nums[allKeys[i]]} vez(es)\n');
+  for (var i in allKeys) {
+    stdout.write('$i aparece ${nums[i]} vez(es)\n');
   }
 }
