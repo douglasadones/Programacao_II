@@ -25,7 +25,7 @@ void main() {
     print('blá');
   } catch (e) {
     rethrow;
-  } // Olhar de pois esse rethrow.
+  } // Olhar depois esse rethrow.
   // Esse rethrow serve para lançar novamente o erro para tratar em outro lugar, se quiser.
 
   // Obs: Não é preciso usar o catch para usar o finally.
